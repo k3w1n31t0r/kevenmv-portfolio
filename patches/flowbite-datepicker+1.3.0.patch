@@ -1,0 +1,16 @@
+diff --git a/node_modules/flowbite-datepicker/dist/main.esm.js b/node_modules/flowbite-datepicker/dist/main.esm.js
+index 04cb054..102826d 100644
+--- a/node_modules/flowbite-datepicker/dist/main.esm.js
++++ b/node_modules/flowbite-datepicker/dist/main.esm.js
+@@ -588,7 +588,10 @@ var defaultOptions = {
+   weekStart: 0
+ };
+ 
+-var range = document.createRange();
++var range;
++if (typeof document !== 'undefined' && document.createRange) {
++  range = document.createRange();
++}
+ function parseHTML(html) {
+   return range.createContextualFragment(html);
+ }

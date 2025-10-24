@@ -1,0 +1,152 @@
+{
+  "App":{
+    "Project" :{
+      "Codaly": {
+        "text_1"             : "Codaly is a versatile and powerful tool for managing labels and prices on Android devices.",
+        "text_2"             : "You can print labels with updated prices and automatically detect those that have changed, ensuring you always have the latest prices. Codaly allows you to assign labels and databases per device.",
+        "text_3"             : "Codaly is compatible with a wide range of Android devices, including handhelds, smartphones, terminals, tablets, and even Chromebooks, allowing you to print efficiently and effectively anywhere.",
+        "text_4"             : "Codaly mobile print labels",
+        "link"               : "Link: ",
+        "name_proyect"       : "Project name: ",
+        "rols_web"           : "Rols web",
+        "rw_1"               : "Full Stack Developer (Next.js | Node.js)",
+        "rw_2"               : "Database Engineer (Design and implementation with RDS)",
+        "rw_3"               : "DevOps Engineer (Configuration and deployment in EC2 with Docker)",
+        "rols_app"           : "Rols Mobile app",
+        "ra_1"               : "Mobile App Developer (React Native CLI)",
+        "ra_2"               : "Android App Publisher (Google Play Console Publisher)",
+        "client_company"     : "Client/Company: ",
+        "property"           : "Property: ",
+        "property_disclaimer": "This project was developed by me as part of my work at Label Dictate LATAM. The intellectual property rights belong to the company."
+      },
+      "Portal": {
+        "text_1"             : "Portal Label Dictate Latam is a web application that allows users to manage their subscriptions to software solutions for printing and barcode identification.",
+        "text_2"             : "The application provides a user-friendly interface for managing your subscriptions efficiently.",
+        "text_3"             : "It also allows you to make purchases (stripe) of subscriptions and manage your payments for our applications (Text2 Barcode, Suite Mobile POS, PDF label cut, ParkeaYa).",
+        "link"               : "Links: ",
+        "name_proyect"       : "Project name: ",
+        "rols_web"           : "Web rols: ",
+        "rw_1"               : "Full Stack Developer (React.js + vite | Node.js)",
+        "rw_2"               : "Database Engineer (Design and implementation)",
+        "rw_3"               : "DevOps Engineer (Configuration and deployment in EC2 with PM2)",
+        "client_company"     : "Client/Company: ",
+        "property"           : "Property: ",
+        "property_disclaimer": "This project was developed by me as part of my work at Label Dictate LATAM. The intellectual property rights belong to the company."
+      },
+      "Ribetec": {
+        "text_1"             : "Ribetec is a support and maintenance company that provides services to clients and employees.",
+        "text_2"             : "The company provides support and maintenance services for software solutions for barcode printing and identification.",
+        "text_3"             : "The company also provides a timeline for the management of tickets.",
+        "link"               : "Links: ",
+        "name_proyect"       : "Project name: ",
+        "rols_web"           : "Web rols: ",
+        "rw_1"               : "Full Stack Developer (Laravel | Javascript)",
+        "rw_2"               : "Database Engineer (Design and implementation)",
+        "rw_3"               : "DevOps Engineer (Configuration and deployment in cPanel)",
+        "client_company"     : "Client/Company: ",
+        "property"           : "Property: ",
+        "property_disclaimer": "This project was developed by me as part of my work at Label Dictate LATAM and Ribetec. The intellectual property rights belong to the companies."
+      },
+      "Designer": {
+        "text_1"             : "Create and design your product labels with Codaly. Personalize and adjust the elements of your label to obtain a perfect design",
+        "text_2"             : "Drag, edit and preview in real time. Export for thermal printers and send to print without complications.",
+        "text_3"             : "Compatibility with ZPL, TSPL and ESC/POS.",
+        "text_4"             : "Basic use of the label designer",
+        "text_5"             : "Using the label designer with a database",
+        "link"               : "Link:",
+        "name_proyect"       : "Project name:",
+        "name"               : "Label Designer",
+        "rols_web"           : "Web roles:",
+        "rw_1"               : "Full Stack Developer (Next.js | Node.js)",
+        "rw_2"               : "Database Engineer (Design and implementation with PostgreSQL | RDS)",
+        "rw_3"               : "DevOps Engineer (Configuration and deployment on EC2 with Docker)",
+        "client_company"     : "Client/Company:",
+        "property"           : "Ownership:",
+        "property_disclaimer": "This project was developed by me as part of my work at Label Dictate LATAM. The intellectual property rights belong to the company."
+      },
+      "SMPRepo": {
+        "text_1"             : "Smp repo is a clone of Google Drive for file management for Suite Mobile POS.",
+        "text_2"             : "The application provides a user-friendly interface for managing your files efficiently.",
+        "text_3"             : "Help website",
+        "name_proyect"       : "Project name: ",
+        "link"               : "Links: ",
+        "rols_web"           : "Web rols: ",
+        "rw_1"               : "Full Stack Developer (React.js + vite | Node.js)",
+        "rw_2"               : "Database Engineer (Design and implementation)",
+        "rw_3"               : "DevOps Engineer (Configuration and deployment in EC2 with PM2)",
+        "client_company"     : "Client/Company: ",
+        "property"           : "Property: ",
+        "property_disclaimer": "This project was developed by me as part of my work at Label Dictate LATAM. The intellectual property rights belong to the company."
+      }
+    }
+  },
+  "Components": {
+    "Home": {
+      "Home": {
+        "title": "Hi, I´m Keven M. Dev",
+        "subtitle": "Hi! I am a web developer building the frontend and backend of websites and web applications, also have experience with Android and IOS mobile applications",
+        "avatarAlt": "Avatar image"
+      },
+      "About": {
+        "title"     : "About",
+        "subtitle"  : "me",
+        "about"     : "Computer engineer graduated from the University of Guadalajara. I am a web developer building the frontend and backend of websites and web applications, also have experience with Android and IOS mobile applications",
+        "know_me"   : "Get to know me!",
+        "know_me2"  : "I love technology and software development. I enjoy creating innovative solutions that make people's lives easier and improve their processes and productivity. I have experience with multiple technologies and adapt quickly to new challenges.",
+        "know_me3"  : "I have experience in various frontend and backend development technologies, databases, and cloud services.",
+        "know_me4"  : "If you're looking for someone with skills in web development and hybrid mobile applications, don't hesitate to contact me.",
+        "contact_me": "Contact me!",
+        "my_skills" : "My skills!"
+
+      },
+      "Projects": {
+        "title"           : "Projects",
+        "subtitle"        : "Here you will find some of the personal and clients projects that I created with each project containing its own case study",
+        "view_more"       : "View more...",
+        "title_codaly"    : "Codaly",
+        "subtitle_codaly" : "Codaly is a versatile and powerful application for managing labels and prices on Android devices. | You can print labels with updated prices and automatically detect those that have changed, ensuring your prices are always up to date. Additionally, Codaly allows you to assign labels and databases per device.",
+        "title_portal"    : "Portal Label Dictate Latam",
+        "subtitle_portal" : "Tool for managing subscriptions of software solutions for barcode printing and identification. | Text2 Barcode, Suite Mobile POS, PDF Label Cut, ParkeaYa.",
+        "title_ribetec"   : "Suport Technical Ribetec",
+        "subtitle_ribetec": "Suport Technical Ribetec",
+        "title_smprepo"   : "SMP Repo",
+        "subtitle_smprepo": "Semi clone of Google Drive for file management for Suite Mobile POS.",
+        "title_designer": "Label Designer",
+        "subtitle_designer": "Label designer for printing labels with thermal printers. Compatible with ZPL, TSPL, and ESC/POS."
+      },
+      "Contact": {
+        "title"              : "Contact me",
+        "subtitle"           : "Feel free to Contact me by submitting the form below and I will get back to you as soon as possible.",
+        "name"               : "Name",
+        "placeholder_name"   : "Enter your name",
+        "email"              : "Email",
+        "placeholder_email"  : "Enter your email",
+        "message"            : "Message",
+        "placeholder_message": "Enter your message",
+        "send"               : "Send",
+        "yup_name"           : "Please enter your name",
+        "yup_email"          : "Please enter a valid email",
+        "yup_message"        : "Please enter a message",
+        "php_all_fields"     : "All fields are required.",
+        "php_repatcha"       : "Error validating reCAPTCHA, try again.",
+        "php_success"        : "Message sent successfully.",
+        "php_error"          : "Could not send message.",
+        "php_method"         : "Method not allowed.",
+        "recaptcha"          : "This site is protected by reCAPTCHA and applies the",
+        "privacy_policy"     : "privacy policy",
+        "terms"              : "terms and conditions",
+        "by_google"          : "by Google"
+      } 
+    },
+    "Navigation": {
+      "home"    : "Home",
+      "about"   : "About",
+      "projects": "Projects",
+      "contact" : "Contact"
+    },
+    "Footer": {
+      "developed_by": "Developed by",
+      "portfolio"   : "Portfolio of developments and work done"
+    }
+  }
+}

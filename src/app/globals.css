@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-primary{    
+    @apply uppercase rounded bg-lime-100 text-gray-700 px-12 py-3 font-bold mt-10 shadow-lg shadow-gray-500/50 flex items-center ease-linear duration-200
+}
+.btn-primary:hover{    
+    @apply -translate-y-1 bg-lime-300
+}
+.btn-primary:focus{    
+    @apply ring-4 outline-none ring-lime-400
+}
+
+.btn-secondary{    
+    @apply uppercase rounded bg-blue-500 text-white px-12 py-3 font-bold mt-10 shadow-lg shadow-gray-500/50 flex items-center ease-linear duration-200
+}
+.btn-secondary:hover{    
+    @apply -translate-y-1 bg-blue-700
+}
+.btn-secondary:focus{    
+  @apply ring-4 outline-none ring-blue-400
+}
+
+/* Hover images styles*/
+
+article.custom {
+    position: relative;
+    /* width: 250px; */
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  article.custom img:first-child {
+    box-shadow: 0 60px 60px -60x rgba(0, 30, 255, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%; 
+  }
+  
+  article.custom img:last-child {
+    position: absolute;
+    /* width: 200px; */
+    width: 70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: 0.3s ease;
+    opacity: 0;
+  }
+  
+  article.custom:hover, article.custom:active {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+  }
+  
+  article.custom::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 10%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0) 95%
+    );
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  article.custom:hover::before {
+    opacity: 1;
+  }
+  
+  article.custom:hover img:last-child {
+    opacity: 1;
+    transform: translateY(10%);
+  }
+
+  .project-cs-hero {
+    color: #fff;
+    background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url(/svg/common-bg.svg);
+      background-position-x: 0%, 0%;
+      background-position-y: 0%, 0%;
+      background-size: auto, auto;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+  }
+
+  .image-reflection {
+    position: relative;
+    overflow: hidden; /* opcional según el efecto */
+  }
+
+  .image-reflection::after {
+    background: inherit;
+    position: absolute;
+    content: '';
+    filter: blur(25px) saturate(1.5);
+    width: 100%;
+    height: 100%;
+    scale: 1.05;
+    z-index: -1;
+  }

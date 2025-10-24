@@ -1,0 +1,153 @@
+{
+  "App":{
+    "Project" :{
+      "Codaly": {
+        "text_1"             : "Codaly es una aplicación versátil y potente para la gestión de etiquetas y precios en dispositivos Android.",
+        "text_2"             : "Puedes imprimir etiquetas con los precios actualizados y detectar automáticamente aquellos que han sufrido cambios, manteniendo siempre tus precios al día. Además, Codaly te permite asignar etiquetas y bases de datos por dispositivo.",
+        "text_3"             : "Codaly es compatible con una amplia gama de dispositivos Android, incluidos handhelds, celulares, terminales, tablets y hasta Chromebooks, lo que te permite imprimir de manera portátil y eficiente en cualquier lugar.",
+        "text_4"             : "Codaly mobile Imprime etiquetas",
+        "link"               : "Enlace: ",
+        "name_proyect"       : "Nombre del proyecto: ",
+        "rols_web"           : "Roles web: ",
+        "rw_1"               : "Desarrollador Full Stack (Next.js | Node.js)",
+        "rw_2"               : "Ingeniero de Base de Datos (Diseño e implementación con RDS)",
+        "rw_3"               : "DevOps Engineer (Configuración y despliegue en EC2 con Docker)",
+        "rols_app"           : "Roles Mobile app: ",
+        "ra_1"               : "Desarrollador Mobile App (React Native CLI)",
+        "ra_2"               : "Publicador de Aplicaciones en la Play Store (Google Play Console Publisher)",
+        "client_company"     : "Cliente/Empresa: ",
+        "property"           : "Propiedad: ",
+        "property_disclaimer": "Este proyecto fue desarrollado por mí como parte de mi trabajo en Label Dictate LATAM. Los derechos de propiedad intelectual pertenecen a la empresa."
+      },
+      "Portal": {
+        "text_1"             : "Portal Label Dictate Latam es una aplicación web que permite a los usuarios gestionar sus licencias (suscripciones) de las soluciones de software para impresión e identificación de código de barras.",
+        "text_2"             : "La aplicación proporciona una interfaz de usuario amigable para gestionar sus licencias de manera eficiente.",
+        "text_3"             : "Además permite realizar compras de suscripciones con stripe y gestionar sus pagos de nuestras aplicaciones (Text2 Barcode, Suite Mobile POS, PDF label cut, ParkeaYa).",
+        "link"               : "Enlaces: ",
+        "name_proyect"       : "Nombre del proyecto: ",
+        "rols_web"           : "Roles web: ",
+        "rw_1"               : "Desarrollador Full Stack (React.js + vite | Node.js)",
+        "rw_2"               : "Ingeniero de Base de Datos (Diseño e implementación)",
+        "rw_3"               : "DevOps Engineer (Configuración y despliegue en EC2 con PM2)",
+        "client_company"     : "Cliente/Empresa: ",
+        "property"           : "Propiedad: ",
+        "property_disclaimer": "Este proyecto fue desarrollado por mí como parte de mi trabajo en Label Dictate LATAM. Los derechos de propiedad intelectual pertenecen a la empresa."
+      
+      },
+      "Ribetec": {
+        "text_1"             : "Soporte tecnico para clientes y colaboradores de Ribetec, con el objetivo de mejorar la experiencia de los usuarios y aumentar la satisfacción de los clientes con el manejo de tickets.",
+        "text_2"             : "Agenda de citas con calendly para agendar citas con los colaboradores de Ribetec y realizar el seguimiento de los tickets.",
+        "text_3"             : "Tambien cuenta con una linea de tiempo para el seguimiento de los tickets.",
+        "link"               : "Enlaces: ",
+        "name_proyect"       : "Nombre del proyecto: ",
+        "rols_web"           : "Roles web: ",
+        "rw_1"               : "Desarrollador Full Stack (Laravel | Javascript)",
+        "rw_2"               : "Ingeniero de Base de Datos (Diseño e implementación)",
+        "rw_3"               : "DevOps Engineer (Configuración y despliegue en cPanel)",
+        "client_company"     : "Cliente/Empresa: ",
+        "property"           : "Propiedad: ",
+        "property_disclaimer": "Este proyecto fue desarrollado por mí como parte de mi trabajo en Label Dictate LATAM y Ribetec. Los derechos de propiedad intelectual pertenecen a las empresas."
+      },
+      "Designer":{
+        "text_1"             : "Crea y diseña tus etiquetas de productos con Codaly. Personaliza y ajusta los elementos de tu etiqueta para obtener un diseño perfecto",
+        "text_2"             : "Arrastra, edita y previsualiza en tiempo real. Exporta para impresoras térmicas y envía a imprimir sin complicaciones.",
+        "text_3"             : "Compatibilidad con ZPL, TSPL y ESC/POS.",
+        "text_4"             : "Uso básico del diseñador de etiquetas",
+        "text_5"             : "Uso del diseñador de etiquetas con base de datos",
+        "link"               : "Enlace:",
+        "name_proyect"       : "Nombre del proyecto: ",
+        "name"               : "Diseñador de etiquetas",
+        "rols_web"           : "Roles web: ",
+        "rw_1"               : "Desarrollador Full Stack (Next.js | Node.js)",
+        "rw_2"               : "Ingeniero de Base de Datos (Diseño e implementación con PostgresSQL | RDS)",
+        "rw_3"               : "DevOps Engineer (Configuración y despliegue en EC2 con Docker)",
+        "client_company"     : "Cliente/Empresa: ",
+        "property"           : "Propiedad: ",
+        "property_disclaimer": "Este proyecto fue desarrollado por mí como parte de mi trabajo en Label Dictate LATAM. Los derechos de propiedad intelectual pertenecen a la empresa."
+      },
+      "SMPRepo": {
+        "text_1"             : "Semi clon de Google Drive para gestión de archivos de Suite Mobile POS",
+        "text_2"             : "Permite subir y descargar archivos de forma sencilla y segura.",
+        "text_3"             : "Página de Ayuda: ",
+        "name_proyect"       : "Nombre del proyecto: ",
+        "link"               : "Enlace: ",
+        "rols_web"           : "Roles web: ",
+        "rw_1"               : "Desarrollador Full Stack (React + vite | Node.js)",
+        "rw_2"               : "Ingeniero de Base de Datos (Diseño e implementación con PostgresSQL)",
+        "rw_3"               : "DevOps Engineer (Configuración y despliegue en EC2 con PM2)",
+        "client_company"     : "Cliente/Empresa: ",
+        "property"           : "Propiedad: ",
+        "property_disclaimer": "Este proyecto fue desarrollado por mí como parte de mi trabajo en Label Dictate LATAM. Los derechos de propiedad intelectual pertenecen a la empresa."      
+      }
+    }
+  },
+  "Components": {
+    "Home": {
+      "Home": {
+        "title"    : "Hola, soy Keven M. Desarrollador",
+        "subtitle" : "¡Hola! Soy un desarrollador que construye el frontend y backend de sitios y aplicaciones web, además tengo experiencia con aplicaciones móviles Android e IOS",
+        "avatarAlt": "Imagen del avatar"
+      },
+      "About": {
+        "title"     : "Sobre",
+        "subtitle"  : "mi",
+        "about"     : "Soy ingeniero en informática egresado de la Universidad de Guadalajara. Soy un desarrollador web especializado en la creación de frontend y backend para sitios web y aplicaciones web. También tengo experiencia en el desarrollo de aplicaciones móviles para Android e iOS.",
+        "know_me"   : "¡Conoceme!",
+        "know_me2"  : "Me encanta la tecnología y el desarrollo de software. Me gusta crear soluciones innovadoras que faciliten la vida de la gente y mejoren sus procesos y productividad. Cuento con experiencia en múltiples tecnologías y me adapto a nuevos retos.",
+        "know_me3"  : "Tengo experiencia en diversas tecnologías de desarrollo frontend, backend, bases de datos y servicios en la nube",
+        "know_me4"  : "Si estás buscando a alguien con habilidades en desarrollo web y aplicaciones moviles hibridas, no dudes en contactarme.",
+        "contact_me": "¡Contactame!",
+        "my_skills" : "¡Mis habilidades!"
+      },
+      "Projects": {
+        "title"            : "Proyectos",
+        "subtitle"         : "Aqui encontraras algunos de mis proyectos personales y de clientes",
+        "view_more"        : "Ver más...",
+        "title_codaly"     : "Codaly",
+        "subtitle_codaly"  : "Codaly es una aplicación versátil y potente para la gestión de etiquetas y precios en dispositivos Android.|Puedes imprimir etiquetas con los precios actualizados y detectar automáticamente aquellos que han sufrido cambios, manteniendo siempre tus precios al día. Además, Codaly te permite asignar etiquetas y bases de datos por dispositivo.",
+        "title_portal"     : "Portal Label Dictate Latam",
+        "subtitle_portal"  : "Herramienta para la gestión de suscripciones de las soluciones de software para impresión e identificación de código de barras. | Text2 Barcode, Suite Mobile POS, PDF label cut, ParkeaYa",
+        "title_ribetec"    : "Soporte Técnico Ribetec",
+        "subtitle_ribetec" : "Herramienta para la gestión y administración de tickets de soporte de clientes y colaboradores, con el objetivo de mejorar la experiencia de los usuarios y aumentar la satisfacción de los clientes. | También cuenta con una linea de tiempo para el seguimiento de los tickets.",
+        "title_smprepo"    : "SMP Repo",
+        "subtitle_smprepo" : "Semi clon de Google Drive para gestión de archivos para aplicación Suite Mobile POS.",
+        "title_designer"   : "Diseñador de etiquetas",
+        "subtitle_designer": "Diseñador de etiquetas para impresión de etiquetas con impresoras térmicas. Compatible con ZPL, TSPL y ESC/POS."
+      },
+      "Contact": {
+        "title"              : "Contactame",
+        "subtitle"           : "No dude en ponerse en contacto conmigo enviando el formulario a continuación y me pondré en contacto con usted lo antes posible.",
+        "name"               : "Nombre",
+        "placeholder_name"   : "Escriba su nombre",
+        "email"              : "Correo",
+        "placeholder_email"  : "Escriba su correo",
+        "message"            : "Mensaje",
+        "placeholder_message": "Escriba su mensaje",
+        "send"               : "Enviar",
+        "yup_name"           : "Por favor ingrese su nombre",
+        "yup_email"          : "Por favor ingrese un correo electronico valido",
+        "yup_message"        : "Por favor ingrese un mensaje",
+        "php_all_fields"     : "Todos los campos son obligatorios.",
+        "php_repatcha"       : "Error de validación reCAPTCHA, intente nuevamente.",
+        "php_success"        : "Mensaje enviado correctamente.",
+        "php_error"          : "No se pudo enviar el mensaje.",
+        "php_method"         : "Método no permitido..",
+        "recaptcha"          : "Este sitio está protegido por reCAPTCHA y se aplican la",
+        "privacy_policy"     : "política de privacidad",
+        "terms"              : "terminos y condiciones",
+        "by_google"          : "de Google"
+      }
+    },
+    "Navigation": {
+      "home"    : "Inicio",
+      "about"   : "Acerca de",
+      "projects": "Proyectos",
+      "contact" : "Contacto"
+    },
+    "Footer": {
+      "developed_by": "Desarrollado por",
+      "portfolio"   : "Portafolio de desarrollos y trabajos realizados"
+    }
+  }
+}
+  
