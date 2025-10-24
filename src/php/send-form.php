@@ -10,8 +10,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+$env   = parse_ini_file('.env');
+$token = $env["NEXT_PRIVATE_RECAPTCHA_SITE_KEY"];
 // Clave secreta generada por Google (debes colocar la tuya aquí)
-$recaptcha_secret = getenv('NEXT_PRIVATE_RECAPTCHA_SITE_KEY');
+$recaptcha_secret = $token;
 
 // Asegúrate de que sea POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

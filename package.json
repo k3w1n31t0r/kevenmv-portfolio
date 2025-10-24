@@ -11,7 +11,7 @@
     "build:all": "next build && npm run copy-php && npm run postexport",
     "test:all": "next build && npm run test-php && npm run postexport",
     "copy-php": "npx copyfiles -u 2 \"src/php/*.php\" out/",
-    "test-php": "npx copyfiles -u 2 \"src/php/*.*\" out/",
+    "test-php": "npx copyfiles -u 2 \"src/php/*.*\" \"src/php/.env\" out/",
     "build2": "next build",
     "start": "next start",
     "lint": "next lint",
