@@ -84,7 +84,7 @@
   "Components": {
     "Home": {
       "Home": {
-        "title"    : "Hola, soy Keven M. Desarrollador",
+        "title"    : "Hola, soy Keven M.",
         "subtitle" : "¡Hola! Soy un desarrollador que construye el frontend y backend de sitios y aplicaciones web, además tengo experiencia con aplicaciones móviles Android e IOS",
         "avatarAlt": "Imagen del avatar"
       },
@@ -135,7 +135,10 @@
         "recaptcha"          : "Este sitio está protegido por reCAPTCHA y se aplican la",
         "privacy_policy"     : "política de privacidad",
         "terms"              : "terminos y condiciones",
-        "by_google"          : "de Google"
+        "by_google"          : "de Google",
+        "modal_send"         : "Enviando",
+        "modal_wait"         : "Por favor espere...",
+        "unknown_error"      : "Error Desconocido"
       }
     },
     "Navigation": {

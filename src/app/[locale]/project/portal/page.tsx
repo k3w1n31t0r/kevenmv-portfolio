@@ -1,102 +1,131 @@
 'use client'
-import Link from 'next/link';
+
 import React from 'react'
-import Span from '../../../../components/_components/Span';
-import { useTranslations } from 'next-intl';
+import Link from 'next/link'
+import { useTranslations } from 'next-intl'
+import { FiExternalLink } from 'react-icons/fi'
+import { HiOutlineSparkles } from 'react-icons/hi2'
+
+import Span from '@/components/_components/Span'
+import Carousel from '@/components/_components/Carousel'
+
 import portalHero from '@/public/images/portal/1.png'
 import portalHero2 from '@/public/images/portal/2.png'
 import portalHero3 from '@/public/images/portal/3.png'
-import Carousel from '@/components/_components/Carousel';
 
 const images = [
-    {
-      original: portalHero.src,
-      thumbnail: portalHero.src,
-    },
-    {
-      original: portalHero2.src,
-      thumbnail: portalHero2.src,
-    },
-    {
-      original: portalHero3.src,
-      thumbnail: portalHero3.src,
-    },
+  { original: portalHero.src, thumbnail: portalHero.src },
+  { original: portalHero2.src, thumbnail: portalHero2.src },
+  { original: portalHero3.src, thumbnail: portalHero3.src },
 ]
-const Portal = () => {
-    
-    const t = useTranslations('App.Project.Portal'); // Especifica el namespace "Portal"
 
-    return (
-        <main className='overflow-hidden relative'>
-            <div className='project-cs-hero h-full md:px-10'>
-                <div 
-                    className='mx-5 lg:mx-32'
-                    id='sections' 
-                >
-                    {/* main text  */}
-                    <section id='project-intro'>
-                        <div className='flex flex-col'>
-                            <h1 className='text-blue-500 text-4xl lg:text-6xl text-center font-bold uppercase my-10'>Portal </h1>                                                                
-                            <Span text={t('text_1')} />
-                            <Span text={t('text_2')} />
-                            <Span text={t('text_3')} />
-                        </div>
-                    </section>
-
-                    {/* carousels  */}
-                    <section id="project-properties" className='mt-5 lg:mt-14'>
-
-                        {/* carousell web  */}
-                        <div className='mb-3'>
-                            <Carousel images={images} />
-                            <p className='text-gray-700'>{t('link')} </p>
-                            <Link href='https://portal.labeldictate.com' className='text-blue-500' target='_blank'>https://portal.labeldictate.com</Link>
-                            <p className='text-gray-700'>&</p>
-                            <Link href='https://ayuda.labeldictate.com' className='text-blue-500' target='_blank'>https://ayuda.labeldictate.com</Link>
-                        </div>
-
-                    </section>
- 
-
-                    {/* description project  */}
-                    <section id='description' className='mt-14 pb-10'>
-                        <ul className='list-disc list-inside text-base text-black'>
-                            {/* name project  */}
-                            <li>
-                                <span className='font-bold'>{t('name_proyect')}</span> <span>Portal</span>
-                            </li>
-
-                            {/* Rols  */}
-                            <li>
-                                <span className='font-bold'>Roles Web:</span>
-                                <ul className='list-disc list-inside ml-6'> {/* Agrega ml-6 o pl-6 */}
-                                    <li>
-                                        <span>{t('rw_1')}</span>
-                                    </li>
-                                    <li>
-                                        <span>{t('rw_2')}</span>
-                                    </li>
-                                    <li>
-                                        <span>{t('rw_3')}</span>
-                                    </li>
-                                </ul>
-                            </li>
-                            {/* Client company */}
-                            <li>
-                                <span className='font-bold'>{t('client_company')}</span> <span>Label Dictate LATAM</span>
-                            </li>
-
-                            {/* Property */}
-                            <li>
-                                <span className='font-bold'>{t('property')}</span> 
-                                <span>{t('property_disclaimer')}</span>
-                            </li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </main>
-    )
+function Card({ children }: { children: React.ReactNode }) {
+  return <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">{children}</div>
+}
+function SectionTitle({ children }: { children: React.ReactNode }) {
+  return <h2 className="text-xl font-extrabold uppercase tracking-wide text-slate-900 md:text-2xl">{children}</h2>
 }
 
-export default Portal
+export default function Portal() {
+  const t = useTranslations('App.Project.Portal')
+
+  return (
+    <main className="bg-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-700 text-white">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-white/10 blur-3xl" />
+          <div className="absolute -bottom-28 -right-28 h-80 w-80 rounded-full bg-black/10 blur-3xl" />
+        </div>
+
+        <div className="relative mx-auto max-w-6xl px-6 py-14 md:py-20">
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="mx-auto inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-xs font-extrabold uppercase tracking-widest ring-1 ring-white/20 backdrop-blur">
+              <HiOutlineSparkles />
+              Case study
+            </div>
+
+            <h1 className="mt-6 text-3xl font-extrabold uppercase tracking-wide md:text-5xl">Portal</h1>
+
+            <div className="mx-auto mt-6 space-y-4 text-white/90">
+              <Span text={t('text_1')} />
+              <Span text={t('text_2')} />
+              <Span text={t('text_3')} />
+            </div>
+
+            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="https://portal.labeldictate.com"
+                target="_blank"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-5 py-3 font-extrabold uppercase text-indigo-700 shadow-lg shadow-black/20 transition-all hover:-translate-y-0.5 hover:bg-white/95"
+              >
+                Abrir portal <FiExternalLink />
+              </Link>
+              <Link
+                href="#details"
+                className="inline-flex items-center justify-center rounded-2xl bg-white/10 px-5 py-3 font-extrabold uppercase ring-1 ring-white/20 backdrop-blur transition hover:bg-white/15"
+              >
+                Ver detalles
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-12 md:py-16">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div className="space-y-6 lg:col-span-2">
+            <Card>
+              <SectionTitle>Galería</SectionTitle>
+              <div className="mt-5">
+                <Carousel images={images} />
+                <p className="mt-4 text-sm text-slate-600">{t('link')}</p>
+
+                <div className="mt-2 flex flex-col gap-1">
+                  <Link href="https://portal.labeldictate.com" target="_blank" className="inline-flex items-center gap-2 text-sm font-bold text-blue-700 hover:text-blue-900">
+                    https://portal.labeldictate.com <FiExternalLink />
+                  </Link>
+                  <Link href="https://ayuda.labeldictate.com" target="_blank" className="inline-flex items-center gap-2 text-sm font-bold text-blue-700 hover:text-blue-900">
+                    https://ayuda.labeldictate.com <FiExternalLink />
+                  </Link>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          <div id="details" className="space-y-6 scroll-mt-24">
+            <Card>
+              <SectionTitle>Detalles</SectionTitle>
+              <dl className="mt-5 space-y-4 text-sm">
+                <div className="rounded-2xl bg-slate-50 p-4">
+                  <dt className="font-extrabold text-slate-900">{t('name_proyect')}</dt>
+                  <dd className="mt-1 text-slate-600">Portal</dd>
+                </div>
+
+                <div className="rounded-2xl bg-slate-50 p-4">
+                  <dt className="font-extrabold text-slate-900">Roles Web</dt>
+                  <dd className="mt-2">
+                    <ul className="list-disc space-y-1 pl-5 text-slate-600">
+                      <li>{t('rw_1')}</li>
+                      <li>{t('rw_2')}</li>
+                      <li>{t('rw_3')}</li>
+                    </ul>
+                  </dd>
+                </div>
+
+                <div className="rounded-2xl bg-slate-50 p-4">
+                  <dt className="font-extrabold text-slate-900">{t('client_company')}</dt>
+                  <dd className="mt-1 text-slate-600">Label Dictate LATAM</dd>
+                </div>
+
+                <div className="rounded-2xl bg-slate-50 p-4">
+                  <dt className="font-extrabold text-slate-900">{t('property')}</dt>
+                  <dd className="mt-1 text-slate-600">{t('property_disclaimer')}</dd>
+                </div>
+              </dl>
+            </Card>
+          </div>
+        </div>
+      </section>
+    </main>
+  )
+}

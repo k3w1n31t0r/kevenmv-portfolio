@@ -48,6 +48,13 @@
         "property_disclaimer": "This project was developed by me as part of my work at Label Dictate LATAM and Ribetec. The intellectual property rights belong to the companies."
       },
       "Designer": {
+        "case_study"         : "Case study",
+        "summary"            : "Summary",
+        "details"            : "Details",
+        "show_site"          : "Show site",
+        "watch_video"        : "Watch videos",
+        "gallery"            : "Gallery",
+        "contact"            : "Contact",
         "text_1"             : "Create and design your product labels with Codaly. Personalize and adjust the elements of your label to obtain a perfect design",
         "text_2"             : "Drag, edit and preview in real time. Export for thermal printers and send to print without complications.",
         "text_3"             : "Compatibility with ZPL, TSPL and ESC/POS.",
@@ -83,7 +90,7 @@
   "Components": {
     "Home": {
       "Home": {
-        "title": "Hi, I´m Keven M. Dev",
+        "title": "Hi, I´m Keven M.",
         "subtitle": "Hi! I am a web developer building the frontend and backend of websites and web applications, also have experience with Android and IOS mobile applications",
         "avatarAlt": "Avatar image"
       },
@@ -135,7 +142,10 @@
         "recaptcha"          : "This site is protected by reCAPTCHA and applies the",
         "privacy_policy"     : "privacy policy",
         "terms"              : "terms and conditions",
-        "by_google"          : "by Google"
+        "by_google"          : "by Google",
+        "modal_send"         : "Sending",
+        "modal_wait"         : "Please wait...",
+        "unknown_error"      : "Unknown Error"
       } 
     },
     "Navigation": {

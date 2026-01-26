@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
 import './globals.css'
 import avatar from '@/public/images/avatar.png'
+import Providers from './providers';
 
 const openSans = Open_Sans({ subsets: ['latin'], display: 'swap' })
 
@@ -33,7 +34,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html className={`${openSans.className} scroll-smooth`}>
       <body className='bg-gray-200 mx-auto'>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   )

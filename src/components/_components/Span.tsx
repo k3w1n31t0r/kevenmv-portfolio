@@ -1,11 +1,5 @@
 import React from 'react'
 
-const Span = ({text}: { text: string }) => {
-  return (
-    <p className='text-gray-700 mb-5 text-base md:text-xl leading-8 font-medium'>
-        {text}
-    </p>
-  )
+export default function Span({ text }: { text: string }) {
+  return <p className="mx-auto mt-5 max-w-2xl text-base/7 text-white/90 md:text-lg/8">{text}</p>
 }
-
-export default Span

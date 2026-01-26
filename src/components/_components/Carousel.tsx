@@ -1,30 +1,30 @@
-"use client"
+'use client'
+
 import React from 'react'
-import ImageGallery from "react-image-gallery";
-
-import "react-image-gallery/styles/css/image-gallery.css";
-
+import ImageGallery from 'react-image-gallery'
+import 'react-image-gallery/styles/css/image-gallery.css'
 
 type ImageCarousel = {
-    original: string,
-    thumbnail: string
+  original: string
+  thumbnail: string
 }
+
 type Props = {
-  images : ImageCarousel[]
-}
-const Carousel = ({images}: Props) => {
-    return (
-        <div className='border-2 border-gray-300 rounded'>
-            <ImageGallery 
-                items={images}
-                showPlayButton={false} 
-                autoPlay={true} 
-                slideInterval={3000} 
-                additionalClass='rounded-xl '
-
-            />
-        </div>
-    )
+  images: ImageCarousel[]
+  autoPlay?: boolean
 }
 
-export default Carousel
+export default function Carousel({ images, autoPlay = true }: Props) {
+  return (
+    <div className="rounded-3xl border border-slate-200 bg-white shadow-sm overflow-hidden">
+      <ImageGallery
+        items={images}
+        showPlayButton={false}
+        autoPlay={autoPlay}
+        slideInterval={3000}
+        additionalClass="rounded-3xl"
+        showFullscreenButton={false}
+      />
+    </div>
+  )
+}

@@ -1,65 +1,120 @@
 'use client'
-import React  from 'react'
-import { isPair } from '@/utilities/utilities'
+
 import Image from 'next/image'
 import Link from 'next/link'
-import { projects } from '@/utilities/constants'
+import React from 'react'
 import { useTranslations } from 'next-intl'
+import { projects } from '@/utilities/constants'
+import { motion, type BezierDefinition } from 'framer-motion'
 
-const TextSubtitle = ({subtitle}: {subtitle: string}) => { 
-	
-	const subs = subtitle.split('|');
-	return (
-	<>
-		{subs.map((e,i) => (
-			<p key={i} 
-			   className='text-gray-700 text-start mb-3'
-			>{e}</p>
-		))}
-	</>
-	)
-}
-const Projects = () => {
+const easeOut: BezierDefinition = [0.16, 1, 0.3, 1]
 
-	const t = useTranslations('Components.Home.Projects');
-	return (
-		<section id="projects">
-			<div className='p-10 md:pt-20'>
-				<div className='flex flex-col justify-center'>
-					<h2 className='text-2xl lg:text-4xl font-bold uppercase text-center mb-8'>{t('title')}</h2>
-					
-					<p className='text-lg/7 md:text-2xl/7 text-center lg:pl-32 lg:pr-32 mb-14 text-gray-700'>
-						{t('subtitle')} 
-					</p>              
-				</div>
-
-					<div className='p-10 md:px-10 lg:px-32 '>
-					{
-						projects.map((e,i) => (
-							<div key={i} className={`flex flex-col ${isPair(i) ? 'md:flex-row' : 'md:flex-row-reverse'} items-center mb-10 border-b last:border-b-0 border-gray-300 pb-10`}>
-								<div className={`md:basis-5/12 ${isPair(i) ? 'me-0 md:me-10' : ''}`}>
-									<article className='custom'>
-										<Image src={e.image} alt={e.title} />
-										<Image src={e.image2} alt={e.title} />
-									</article>
-								</div>
-								<div className={`md:basis-7/12 text-left ${!isPair(i) ? 'me-0 md:me-10' : ''}`}>
-									<p className='mb-4 text-2xl  mt-10 md:mt-0 font-bold'>{t(e.title)}</p>
-									{ <TextSubtitle subtitle={t(e.text)} /> }
-									<div className='inline-block'>
-										<Link 
-											href={`project/${e.url}`} 
-											className='btn-secondary'
-										>{t('view_more')}</Link>
-									</div>
-								</div>
-							</div>			
-						))
-					}
-					</div>
-			</div>
-		</section>
-	)
+const container = {
+  hidden: {},
+  show: {
+    transition: { staggerChildren: 0.08, delayChildren: 0.05 },
+  },
 }
 
-export default Projects
+const item = {
+  hidden: { opacity: 0, y: 14 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: easeOut } },
+}
+
+function Subtitle({ text }: { text: string }) {
+  const parts = text.split('|')
+  return (
+    <div className="space-y-3 text-sm/6 text-slate-600 md:text-base/7">
+      {parts.map((p, i) => (
+        <p key={i}>{p}</p>
+      ))}
+    </div>
+  )
+}
+
+export default function Projects() {
+  const t = useTranslations('Components.Home.Projects')
+
+  return (
+    <motion.section
+      id="projects"
+      className="bg-white"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      variants={container}
+    >
+      <div className="mx-auto max-w-6xl px-6 py-14 md:py-20">
+        {/* Header */}
+        <motion.div variants={item} className="text-center">
+          <h2 className="text-2xl font-extrabold uppercase tracking-wide md:text-4xl">
+            {t('title')}
+          </h2>
+          <p className="mx-auto mt-6 max-w-4xl text-base/7 text-slate-600 md:text-xl/8">
+            {t('subtitle')}
+          </p>
+        </motion.div>
+
+        {/* Grid */}
+        <motion.div
+          variants={container}
+          className="mt-10 grid grid-cols-1 gap-6 md:mt-14 md:grid-cols-2"
+        >
+          {projects.map((p, i) => (
+            <motion.article
+              key={i}
+              variants={item}
+              className={[
+                'group rounded-3xl border border-slate-200 bg-white p-4 shadow-sm',
+                'transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/60',
+              ].join(' ')}
+            >
+              {/* Media */}
+              <div className="grid grid-cols-2 gap-3">
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+                  <Image
+                    src={p.image}
+                    alt={t(p.title)}
+                    className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                </div>
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
+                  <Image
+                    src={p.image2}
+                    alt={t(p.title)}
+                    className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="mt-5">
+                <h3 className="text-xl font-extrabold text-slate-900 md:text-2xl">
+                  {t(p.title)}
+                </h3>
+
+                <div className="mt-3">
+                  <Subtitle text={t(p.text)} />
+                </div>
+
+                <div className="mt-6">
+                  <Link
+                    href={`project/${p.url}`}
+                    className={[
+                      'inline-flex w-full items-center justify-center rounded-2xl px-5 py-3 font-bold uppercase',
+                      'bg-slate-900 text-white shadow-sm transition-all duration-200',
+                      'hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-2',
+                      'md:w-auto',
+                    ].join(' ')}
+                  >
+                    {t('view_more')}
+                  </Link>
+                </div>
+              </div>
+            </motion.article>
+          ))}
+        </motion.div>
+      </div>
+    </motion.section>
+  )
+}

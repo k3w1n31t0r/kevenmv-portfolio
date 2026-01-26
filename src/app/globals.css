@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --nav-h: 83px; /* ajusta si cambias el navbar */
+}
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 84px; /* ajusta a la altura real del navbar */
+
 }
 
 .btn-primary{    
