@@ -3,12 +3,12 @@
 💻 **Desarrollador Full Stack** con más de **5 años de experiencia** creando aplicaciones web modernas, eficientes y con interfaces limpias.  
 Me apasiona transformar ideas en proyectos funcionales, combinando tecnologías como **React, Node.js y Laravel**.  
 
-🚀 Actualmente me enfoco en fortalecer mi portafolio con proyectos que reflejen buenas prácticas, escalabilidad y un diseño centrado en el usuario.  
+Actualmente me enfoco en fortalecer mi portafolio con proyectos que reflejen buenas prácticas, escalabilidad y un diseño centrado en el usuario.  
 También cuento con experiencia en **servicios de AWS (RDS, EC2, S3, Lambda)** y **web hosting**, lo que me permite desarrollar e implementar soluciones completas en la nube.  
 
 ---
 
-## 🧠 Tecnologías que uso frecuentemente
+## Tecnologías que uso frecuentemente
 
 **Frontend:**  
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
@@ -41,26 +41,17 @@ También cuento con experiencia en **servicios de AWS (RDS, EC2, S3, Lambda)** y
 ![REST API](https://img.shields.io/badge/-REST%20API-02569B?style=flat&logo=swagger&logoColor=white)
 ![JSON](https://img.shields.io/badge/-JSON-000000?style=flat&logo=json&logoColor=white)
 
----
-
-## 🌱 Actualmente aprendiendo
-- Arquitectura de software y optimización de rendimiento  
-- Integración de servicios cloud y automatización con AWS Lambda  
 
 ---
 
-## 💼 Portafolio
+## Portafolio
 Puedes ver algunos de mis proyectos y trabajos en:  
-👉 [**devkeven.com**](https://devkeven.com/)
+[**devkeven.com**](https://devkeven.com/)
 
 ---
 
-## 📫 Cómo contactarme
+##  Cómo contactarme
 - 💼 [LinkedIn](https://mx.linkedin.com/in/keven-maria-valenzuela-3910001a3)  
 - 🧑‍💻 [GitHub](https://github.com/k3w1n31t0r)  
 - 📧 *[keven.mv@hotmail.com]*  
 - 📧 *[keven@devkeven.com]*  
-
----
-
-⭐️ **Si alguno de mis proyectos te resulta útil, no dudes en dejar una estrella o compartirlo.**
